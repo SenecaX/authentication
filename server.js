@@ -44,6 +44,7 @@ require("./passport-config");
 app.use(passport.initialize());
 app.use(passport.session());
 
-//Get environment port or use 3000
-const port = process.env.PORT || "3000";
+//Get environment port or use 3001
+const port = process.env.PORT || "3001";
+console.log("port", port);
 app.set("port", port);
